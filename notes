@@ -1,0 +1,28 @@
+I think to run this, we need to download the ino code to the robot.
+Then, we plug it in with the tcp ip cable.
+
+connect the ttyACM0
+
+sudo chmod 666 /dev/ttyACM0 #or whatever ACM0 we're using.
+
+python3 neuronTest.py
+
+It's set to go left or right by
+IGNITING_NEURONS = 100 (left) or 50 right.
+
+If you want to run the code without the robot, try neuronTestNoRobot.py.
+You can also run runTests.sh, and use the printPklFile.py to decode the
+spike data (from the pkl file).
+
+To download the ino code to the robot, you need to open the arduino_ide.
+Open the ino code.
+Take the uno board off the shield and wires.
+Connect the tcp-ip cable.
+Set the permission.
+sketch upload from the ide.
+Disconnect the tcp-ip cable.
+Put the uno board back on the shield
+
+It should run (right) without nest.
+Now you should be able to run with nest as above.
+
