@@ -1,4 +1,4 @@
-I think to run this, we need to download the ino code to the robot.
+To run this, we need to download the ino code to the robot.
 Then, we plug it in with the tcp ip cable.
 
 connect the ttyACM0
